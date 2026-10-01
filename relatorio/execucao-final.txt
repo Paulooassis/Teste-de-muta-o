@@ -1,0 +1,139 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> operacoes-mutante-lab@1.0.0 mutation
+> stryker run
+
+[32m16:04:56 (18) INFO ProjectReader[39m Found 1 of 44 file(s) to be mutated.
+[32m16:04:56 (18) INFO Instrumenter[39m Instrumented 1 source file(s) with 203 mutant(s)
+[32m16:04:57 (18) INFO ConcurrencyTokenProvider[39m Creating 2 test runner process(es).
+[32m16:04:57 (18) INFO BroadcastReporter[39m Detected that current console does not support the "progress" reporter, downgrading to "progress-append-only" reporter
+[32m16:04:57 (18) INFO DryRunExecutor[39m Starting initial test run (jest test runner with "perTest" coverage analysis). This may take a while.
+[32m16:04:58 (18) INFO DryRunExecutor[39m Initial test run succeeded. Ran 89 tests in 0 seconds (net 35 ms, overhead 489 ms).
+
+All tests
+  melhorias.test.js
+    ✓ Casos que faltavam nos testes iniciais confere a mensagem da divisão por zero [line 4] (killed 2)
+    ✓ Casos que faltavam nos testes iniciais aceita raiz de zero e rejeita números negativos [line 9] (killed 5)
+    ✓ Casos que faltavam nos testes iniciais calcula o fatorial de 0 [line 14] (killed 4)
+    ~ Casos que faltavam nos testes iniciais calcula o fatorial de 1 [line 14] (covered 8)
+    ✓ Casos que faltavam nos testes iniciais calcula o fatorial de 2 [line 14] (killed 4)
+    ~ Casos que faltavam nos testes iniciais calcula o fatorial de 5 [line 14] (covered 11)
+    ✓ Casos que faltavam nos testes iniciais rejeita fatorial negativo [line 18] (killed 2)
+    ✓ Casos que faltavam nos testes iniciais trata soma, média e produto de arrays vazios e unitários [line 22] (killed 9)
+    ✓ Casos que faltavam nos testes iniciais rejeita arrays vazios nas operações sem resultado definido [line 32] (killed 9)
+    ✓ Casos que faltavam nos testes iniciais verifica a paridade de -2 [line 38] (killed 8)
+    ~ Casos que faltavam nos testes iniciais verifica a paridade de 0 [line 38] (covered 10)
+    ✓ Casos que faltavam nos testes iniciais verifica a paridade de 3 [line 38] (killed 2)
+    ✓ Casos que faltavam nos testes iniciais calcula o MDC quando não há resto e quando há várias iterações [line 43] (killed 6)
+    ✓ Casos que faltavam nos testes iniciais verifica se -1 é primo [line 50] (killed 4)
+    ~ Casos que faltavam nos testes iniciais verifica se 0 é primo [line 50] (covered 6)
+    ✓ Casos que faltavam nos testes iniciais verifica se 1 é primo [line 50] (killed 1)
+    ✓ Casos que faltavam nos testes iniciais verifica se 2 é primo [line 50] (killed 4)
+    ✓ Casos que faltavam nos testes iniciais verifica se 4 é primo [line 50] (killed 5)
+    ~ Casos que faltavam nos testes iniciais verifica se 9 é primo [line 50] (covered 15)
+    ✓ Casos que faltavam nos testes iniciais verifica se 11 é primo [line 50] (killed 3)
+    ✓ Casos que faltavam nos testes iniciais calcula Fibonacci para 0 [line 54] (killed 2)
+    ✓ Casos que faltavam nos testes iniciais calcula Fibonacci para 1 [line 54] (killed 1)
+    ✓ Casos que faltavam nos testes iniciais calcula Fibonacci para 2 [line 54] (killed 1)
+    ✓ Casos que faltavam nos testes iniciais calcula Fibonacci para 3 [line 54] (killed 1)
+    ✓ Casos que faltavam nos testes iniciais limita o valor -1 ao intervalo [line 58] (killed 3)
+    ✓ Casos que faltavam nos testes iniciais limita o valor 0 ao intervalo [line 58] (killed 2)
+    ✓ Casos que faltavam nos testes iniciais limita o valor 5 ao intervalo [line 58] (killed 1)
+    ~ Casos que faltavam nos testes iniciais limita o valor 10 ao intervalo [line 58] (covered 9)
+    ✓ Casos que faltavam nos testes iniciais limita o valor 11 ao intervalo [line 58] (killed 1)
+    ✓ Casos que faltavam nos testes iniciais distingue divisões exatas das que têm resto [line 62] (killed 5)
+    ✓ Casos que faltavam nos testes iniciais converte 100 graus Celsius [line 68] (killed 8)
+    ~ Casos que faltavam nos testes iniciais converte -40 graus Celsius [line 68] (covered 8)
+    ~ Casos que faltavam nos testes iniciais converte 25 graus Celsius [line 68] (covered 8)
+    ✓ Casos que faltavam nos testes iniciais rejeita o inverso de zero [line 73] (killed 6)
+    ✓ Casos que faltavam nos testes iniciais compara 5 e 5 [line 78] (killed 11)
+    ✓ Casos que faltavam nos testes iniciais compara 2 e 5 [line 78] (killed 2)
+    ✓ Casos que faltavam nos testes iniciais compara 5 e 2 [line 78] (killed 1)
+    ~ Casos que faltavam nos testes iniciais mantém a igualdade estrita entre os valores [line 84] (covered 4)
+    ✓ Casos que faltavam nos testes iniciais calcula a mediana de arrays desordenados, pares e unitários [line 88] (killed 14)
+  operacoes.test.js
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 1. deve somar dois números positivos [line 15] (killed 2)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 2. deve subtrair dois números positivos [line 16] (killed 2)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 3. deve multiplicar dois números positivos [line 17] (killed 2)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 4. deve dividir e lançar erro para divisão por zero [line 18] (killed 5)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 5. deve calcular a potência com expoente positivo [line 22] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 6. deve calcular a raiz quadrada de um quadrado perfeito [line 23] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 7. deve retornar o resto da divisão [line 24] (killed 2)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 8. deve calcular o fatorial de um número maior que 1 [line 25] (covered 11)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 9. deve calcular a média de um array com múltiplos elementos [line 26] (killed 2)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 10. deve somar um array com múltiplos elementos [line 27] (covered 3)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 11. deve encontrar o valor máximo em um array [line 30] (killed 4)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 12. deve encontrar o valor mínimo em um array [line 31] (killed 3)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 13. deve retornar o valor absoluto de um número negativo [line 32] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 14. deve arredondar um número para cima [line 33] (killed 1)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 15. deve retornar true para um número par [line 34] (covered 5)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 16. deve retornar true para um número ímpar [line 35] (covered 5)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 17. deve calcular uma porcentagem simples [line 36] (killed 3)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 18. deve aumentar um valor em uma porcentagem [line 37] (killed 4)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 19. deve diminuir um valor em uma porcentagem [line 38] (killed 4)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 20. deve inverter o sinal de um número positivo [line 39] (killed 2)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 21. deve calcular o seno de 0 [line 42] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 22. deve calcular o cosseno de 0 [line 43] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 23. deve calcular a tangente de 0 [line 44] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 24. deve calcular o logaritmo natural de Euler [line 45] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 25. deve calcular o logaritmo na base 10 [line 46] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 26. deve arredondar para baixo [line 47] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 27. deve arredondar para cima [line 48] (killed 1)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 28. deve calcular a hipotenusa de um triângulo retângulo [line 49] (killed 2)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 29. deve converter graus para radianos [line 50] (killed 3)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 30. deve converter radianos para graus [line 51] (killed 3)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 31. deve calcular o MDC de dois números [line 54] (covered 5)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 32. deve calcular o MMC de dois números [line 55] (covered 8)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 33. deve verificar que um número é primo [line 56] (covered 15)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 34. deve calcular o 10º termo de Fibonacci [line 57] (covered 8)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 35. deve calcular o produto de um array [line 58] (covered 3)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 36. deve manter um valor dentro de um intervalo (clamp) [line 59] (covered 9)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 37. deve verificar se um número é divisível por outro [line 60] (covered 5)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 38. deve converter Celsius para Fahrenheit [line 61] (covered 4)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 39. deve converter Fahrenheit para Celsius [line 62] (covered 4)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 40. deve calcular o inverso de um número [line 63] (covered 5)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 41. deve calcular a área de um círculo [line 66] (killed 2)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 42. deve calcular a área de um retângulo [line 67] (killed 2)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 43. deve calcular o perímetro de um retângulo [line 68] (killed 3)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 44. deve verificar se um número é maior que outro [line 69] (covered 5)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 45. deve verificar se um número é menor que outro [line 70] (covered 5)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 46. deve verificar se dois números são iguais [line 71] (covered 4)
+    ~ Suíte de Testes Fraca para 50 Operações Aritméticas 47. deve calcular a mediana de um array ímpar e ordenado [line 72] (covered 13)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 48. deve calcular o dobro de um número [line 73] (killed 2)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 49. deve calcular o triplo de um número [line 74] (killed 2)
+    ✓ Suíte de Testes Fraca para 50 Operações Aritméticas 50. deve calcular a metade de um número [line 75] (killed 2)
+
+[Survived] EqualityOperator
+src/operacoes.js:86:7
+-     if (valor < min) return min;
++     if (valor <= min) return min;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 36. deve manter um valor dentro de um intervalo (clamp)
+    Casos que faltavam nos testes iniciais limita o valor -1 ao intervalo
+    Casos que faltavam nos testes iniciais limita o valor 0 ao intervalo
+  and 3 more tests!
+
+
+[Survived] EqualityOperator
+src/operacoes.js:87:7
+-     if (valor > max) return max;
++     if (valor >= max) return max;
+Tests ran:
+    Suíte de Testes Fraca para 50 Operações Aritméticas 36. deve manter um valor dentro de um intervalo (clamp)
+    Casos que faltavam nos testes iniciais limita o valor 0 ao intervalo
+    Casos que faltavam nos testes iniciais limita o valor 5 ao intervalo
+  and 2 more tests!
+
+
+Ran 3.04 tests per mutant on average.
+--------------|------------------|----------|-----------|------------|----------|----------|
+              | % Mutation score |          |           |            |          |          |
+File          |  total | covered | # killed | # timeout | # survived | # no cov | # errors |
+--------------|--------|---------|----------|-----------|------------|----------|----------|
+All files     |  99.01 |   99.01 |      194 |         7 |          2 |        0 |        0 |
+ operacoes.js |  99.01 |   99.01 |      194 |         7 |          2 |        0 |        0 |
+--------------|--------|---------|----------|-----------|------------|----------|----------|
+[32m16:05:06 (18) INFO MutationTestReportHelper[39m Final mutation score of 99.01 is greater than or equal to break threshold 98
+[32m16:05:06 (18) INFO JsonReporter[39m Your report can be found at: file:///workspace/scratch/fb9480fa4cbf/projeto/reports/final/mutation.json
+[32m16:05:06 (18) INFO HtmlReporter[39m Your report can be found at: file:///workspace/scratch/fb9480fa4cbf/projeto/reports/final/mutation.html
+[32m16:05:06 (18) INFO MutationTestExecutor[39m Done in 9 seconds.

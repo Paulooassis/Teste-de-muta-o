@@ -1,0 +1,36 @@
+{
+  "name": "operacoes-mutante-lab",
+  "version": "1.0.0",
+  "description": "Projeto base para o trabalho de Teste de Muta\u00e7\u00e3o com StrykerJS.",
+  "main": "src/operacoes.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "mutation": "stryker run",
+    "test:initial": "jest --runInBand --roots baseline/test --collectCoverageFrom=\"baseline/src/**/*.js\" --coverage --coverageDirectory=reports/initial/coverage --testPathIgnorePatterns=melhorias",
+    "mutation:initial": "stryker run stryker.initial.conf.json",
+    "mutation:tests-only": "stryker run stryker.tests-only.conf.json"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.2",
+    "@stryker-mutator/core": "^10.0.0",
+    "@stryker-mutator/jest-runner": "^10.0.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "roots": [
+      "<rootDir>/test"
+    ]
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

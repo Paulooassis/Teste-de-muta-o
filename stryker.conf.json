@@ -1,0 +1,26 @@
+{
+  "mutate": [
+    "src/**/*.js"
+  ],
+  "testRunner": "jest",
+  "coverageAnalysis": "perTest",
+  "reporters": [
+    "clear-text",
+    "progress",
+    "html",
+    "json"
+  ],
+  "concurrency": 2,
+  "timeoutMS": 2000,
+  "thresholds": {
+    "high": 98,
+    "low": 80,
+    "break": 98
+  },
+  "htmlReporter": {
+    "fileName": "reports/final/mutation.html"
+  },
+  "jsonReporter": {
+    "fileName": "reports/final/mutation.json"
+  }
+}
